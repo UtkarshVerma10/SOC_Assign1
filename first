@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google</title>
+    <script>
+        function(){
+            var url = document.getElementById("URL").value;
+            var form=document.getElementById("f2").value;
+            form.setattribute("action",url);
+        }
+    </script>
+</head>
+    <body>
+        <h1 style="text-align: center;">My First Sub-Window</h1>
+        <div style="text-align: center;"><h1>Google</h1>
+            <iframe name="page1" src="http://www.google.com/search" width=50% height=10%></iframe>
+            
+            <form target="page1" action="http://www.google.com/search" method="get" id="f1"><br>
+                <input type="text" name="query">
+                <br>
+                <br>
+                <input type="submit" value="Submit Search" name="">
+                <input type="submit" value="I'm feeling lucky!" name="">
+
+
+
+            </form><br><br>
+
+        </div>
+        <div style="text-align: center;">
+            <iframe name="page" src="http://www.google.com/search" width=50% height=10%></iframe>
+            <form  target="page"action="http://www.google.com/search" id="f2" method="get" >
+            <input type="text" name="" id="URL">
+            <input type="submit" value="GO" name="GO" onclick="function();" >
+
+           </form>
+        </div>
+        <br>
+
+        <div>
+            <form id="f3" style="text-align: center;">
+                <input type="text" name=""><input type="submit" name="" value="width"><br>
+                <input type="text" name=""><input type="submit" name="" value="height">
+            </form>
+        </div>
+    </body>
+</head>
+<body>
+
+</body>
+</html>
